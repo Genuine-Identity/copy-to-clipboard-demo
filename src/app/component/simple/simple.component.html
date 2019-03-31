@@ -1,0 +1,16 @@
+<div class="container" style="padding :10px">
+	{{ name }}
+</div>
+<hr>
+<div class="container" style="padding :10px">
+	<div style="padding-top :10px; width:225px">
+		<textarea rows="4" cols="100"   [(ngModel)]="item" id="name" name="name" ></textarea>
+	</div>
+	<div style="padding-top :10px; width:225px">
+		<button type="submit" (click)="onClick()">copy-to-clipboard</button>
+  </div>
+</div>
+<div class="container" style="padding :10px">
+	<textarea rows="4" cols="100" [(ngModel)]="thecontents"></textarea>
+</div>
+ <hr>

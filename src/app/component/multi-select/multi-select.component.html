@@ -1,0 +1,25 @@
+<div class="container" style="padding :10px">
+	{{ name }}
+</div>
+<hr>
+<div class="container">
+	<form [formGroup]="form" (submit)="submit(form.value)">
+		<div style="padding :10px ;overflow-x:scroll; height:350px;">
+			<div *ngFor="let skill of skills.controls; let i=index">
+				<label>	
+          <input type="checkbox" [formControl]="skill"/> {{skillsList[i].name}}
+      </label>
+     </div>
+		</div>
+		
+    <hr>
+    <div class="container">
+      <button type="submit">copy-to-clipboard</button>
+    </div>
+    <hr>
+  </form>
+</div> 
+<div class="container" style="padding :10px">
+  <textarea rows="4" cols="50" [(ngModel)]="thecontents"></textarea>
+</div>
+ <hr>

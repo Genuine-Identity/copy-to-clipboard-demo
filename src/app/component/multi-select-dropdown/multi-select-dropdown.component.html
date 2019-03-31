@@ -1,0 +1,18 @@
+<div class="container" style="padding :10px">
+	{{ name }}
+</div>
+<hr>
+<div class="container" style="padding :10px">
+	<div style="padding-top :10px; width:225px">
+		<ngx-dropdown-treeview [config]="config" [items]="items" [buttonClass]="buttonClass" (selectedChange)="onSelectedChange($event)"
+		 (filterChange)="onFilterChange($event)">
+		</ngx-dropdown-treeview>
+	</div>
+	<div class="container" style="padding-top :10px">
+		Auto Copy to clipboard
+	</div>
+</div>
+<div class="container" style="padding :10px">
+	<textarea rows="8" cols="100" [(ngModel)]="thecontents"></textarea>
+</div>
+ <hr>
